@@ -4,7 +4,7 @@ class Artist:
         self.BirthYear = birthYear
         self.deathYear = deathYear
     def printInfo(self):
-        if self.deathYear == -1:
+        if self.deathYear == str('alive'):
             print('Artist: {}, born {}'.format(self.name, self.BirthYear))
         else:
             print('Artist: {} ({}-{})'.format(self.name, self.BirthYear, self.deathYear))
